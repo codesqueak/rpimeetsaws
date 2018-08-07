@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>AWS / RPi Test System</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/message.css">
+</head>
+
+<body>
+
+<div id="noCognitoMessage" style="display: none;">
+    <div class="warning">
+        Warning! There is no user pool configured in <a href="/js/config.js">/js/config.js</a>.
+    </div>
+</div>
+
+<header>
+    <div>
+        <h1>Raspberry Pi Meets IoT Meets AWS</h1>
+        <p>&nbsp;</p>
+        <div class="row">
+            <div class="column"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Raspberry_Pi_B%2B_top.jpg/320px-Raspberry_Pi_B%2B_top.jpg">
+            </div>
+            <div class="column"><img src="images/iot.png"></div>
+            <div class="column"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/320px-Amazon_Web_Services_Logo.svg.png">
+            </div>
+        </div>
+        <p>&nbsp;</p>
+    </div>
+</header>
+
+<section class="form-wrap">
+    <form id="signinForm">
+        <input type="email" id="emailInputSignin" placeholder="Email" required>
+        <input type="password" id="passwordInputSignin" placeholder="Password" pattern=".*" required>
+        <div class="centertext">
+            <input type="submit" value="Sign In">
+        </div>
+    </form>
+</section>
+
+<footer>
+    <p>&nbsp;</p>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column hozlist">
+            <ul>
+                <li><a href="rpi_display.html">Show Data</a></li>
+                <li><a href="rpi_register.html">Register</a></li>
+                <li><a href="rpi_verify.html">Register</a></li>
+                <li><a href="rpi_signout.html">Sign&nbsp;out</a></li>
+                <li><a href="rpi_attrib.html">Attributions</a></li>
+            </ul>
+        </div>
+        <div class="column"></div>
+    </div>
+</footer>
+
+<script src="js/vendor/jquery-3.1.0.js"></script>
+<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+<script src="js/vendor/amazon-cognito-identity.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/cognito-auth.js"></script>
+</body>
+</html>

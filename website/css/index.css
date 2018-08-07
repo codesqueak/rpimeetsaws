@@ -1,0 +1,157 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: black;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: arial, sans-serif, times, Times New Roman, times-roman, Verdana, enron-beelzebub;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+header img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Forms */
+
+.form-wrap {
+    width: 35%;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 12px 0;
+    margin: 10px 0 30px;
+    display: inline-block;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 24px;
+    opacity: 1;
+    color: black;
+    font-weight: 400;
+    border: 1px solid black;
+}
+
+input.datefield[type=text] {
+    width: 160px;
+}
+
+input:required {
+    box-shadow: none;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    box-shadow: 5px 10px 18px yellow;
+}
+
+input[type=text]:valid, input[type=password]:valid, input[type=email]:valid {
+    box-shadow: 5px 10px 18px green;
+}
+
+input[type=text]:invalid:not(:focus), input[type=password]:invalid:not(:focus), input[type=email]:invalid:not(:focus) {
+    box-shadow: 5px 10px 18px red;
+}
+
+input[type=submit] {
+    font-size: 24px;
+}
+
+input[type=submit]:hover {
+    background-color: #dddddd;
+    color: #bb0000;
+    font-size: 24px;
+}
+
+h1 {
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.hozlist ul {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100px;
+    overflow: auto;
+    text-align: center;
+}
+
+.hozlist li {
+    margin: 0 10px 0 10px;
+    display: inline;
+    font-size: 20px;
+    position: relative
+}
+
+.centertext {
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+.warning {
+    width: 100%;
+    color: black;
+    background-color: lightpink;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
+}
+
+.chart-container {
+    position: relative;
+    height:60vh;
+    width:80vw;
+}
