@@ -13,5 +13,39 @@ How the parts relate to each other
   <img src="images/architecture.png">
 </p>
 
+## IoT Device 
+
+Electronics Package and Supporting Software [link](rpi/README.md)
+
+## S3
+
+Web site file storage and domain publishing [link](s3/README.md)
+
+## Cognito
+
+User Sign-Up, Sign-In, and Access Control [link](cognito/README.md)
+
+## API Gateway
+
+Create and publish a REST API [link](gateway/README.md)
+
+## DynamoDB
+
+JSON data storage for IoT data [link](dynamodb/README.md)
+
+## Lambda
+
+Processing of incoming data from IoT device(s) [link](lambda/README.md)
+
+## IoT Core
+
+MQTT based interface for handling IoT devices [link](iot/README.md)
+
+
+
+
+
+
+
 
 
