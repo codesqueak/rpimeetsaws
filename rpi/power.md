@@ -45,7 +45,7 @@ capable of covering several days of low solar availability.
 To minimize power consumption, a number of steps where taken.
 
 * The electronics where selected to consume as little as possible.  
-    * The Raspberry Pi itself consumes around 125mA when idle
+    * The Raspberry Pi itself consumes around 125mA (0.625W)when idle
     * The DC/DC converted is around 90% efficient
 * Minimum software load - Use something minimal, such as [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/)
 * Disable HDMI 

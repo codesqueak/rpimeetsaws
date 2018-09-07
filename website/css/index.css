@@ -96,6 +96,12 @@ h2 {
     margin: 10px 0;
 }
 
+.arrow {
+    padding: 0;
+    border: 0;
+    background-color: white;
+}
+
 .hidden {
     display: none !important;
     visibility: hidden;
