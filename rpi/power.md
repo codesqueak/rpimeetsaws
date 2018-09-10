@@ -1,9 +1,13 @@
 # Power 
 
-Powering the project is approached from two angles.  Sufficient power needs to be generated in worst case scenarios (Winter) and power usage needs
+Powering the project is approached using two criteria, maximize generation & storage, minimize consumption.  Sufficient power needs to be generated in worst case scenarios (Winter) and power usage needs
 to be minimized to help meet the power budget.
 
 ## Power Generation & Storage
+
+
+<img src="../images/power.png">
+
 
 ### Solar Panel
 
@@ -51,7 +55,7 @@ To minimize power consumption, a number of steps where taken.
 * Disable HDMI 
 * Disable LED's (Software tweak on the Raspberry Pi, physical removal on the charger & DC/DC converter)
 * Application software 'sleeps' between sensor readings
-* Application does a back off if comm's are not available (Longer 'sleeps' between sending attempts)
+* Application software performs a 'back-off' if comm's are not available (Longer 'sleeps' between communication attempts)
 
 An interesting article on Raspberry Pi Zero [power conservation](https://www.jeffgeerling.com/blogs/jeff-geerling/raspberry-pi-zero-conserve-energy)
 
@@ -61,7 +65,7 @@ The capacitor for the *Solar Lithium Ion/Polymer Charger* was increased as this 
 
 The maximum charge rate was increased to the maximum (1000mA) available - Resistor swap. (See Adafruit documentation)
 
-Temperature monitoring of the battery enabled via use of a termistor.  (See Adafruit documentation)
+Temperature monitoring of the battery enabled via use of a thermistor.  (See Adafruit documentation)
 
 Accurate measurement of power consumption via USB was obtained using this very handy [device](https://www.tindie.com/products/mux/usb-31-type-a-power-meter-5-digit-precision/)
 

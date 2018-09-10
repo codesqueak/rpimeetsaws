@@ -48,6 +48,10 @@ The software was required to perform three operations
 [Full details here](software.md)
 
 
+## Prototype Hardware
+
+<img src="../images/prototype.png">
+
 
 
 
