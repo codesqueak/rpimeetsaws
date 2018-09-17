@@ -2,6 +2,8 @@
 
 [Official Documentation](https://aws.amazon.com/documentation/lambda/)
 
+<img src="../images/lambda.png">
+
 A simple Lambda is used to transfer data between the IoT system and DynamoDB.  This is executed when data appears on MQTT.
 
 See the IoT documentation on how to add an Action to an IoT MQTT endpoint to trigger a Lambda. 

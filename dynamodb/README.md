@@ -2,6 +2,8 @@
 
 [Official Documentation](https://aws.amazon.com/dynamodb/)
 
+<img src="../images/dynamodb.png">
+
 The application stores recorded information in DynamoDB.  Entries are partitioned by date and ordered by minute in day. 
 The data is written by a simple Lambda which receives raw JSON from an IoT device topic.
 
@@ -21,7 +23,7 @@ The data is formatted as below:
 The fields in the JSON are defined as:
 
 | Field | Definition |
-| --------|-----------| 
+|:--------|:-----------| 
 | caldate	| Date of data capture, format DD-MM-YYYY  |
 | calminute	| Minute of capture day, range 0..1440  |
 | msg-id	| Unique message identifier, UUID  |
@@ -32,7 +34,7 @@ The fields in the JSON are defined as:
 The table to hold the IoT data is defined as a simple key/value mapping with the following structure:
 
 | Details | Value |
-| --------|-----------| 
+|:--------|:-----------| 
 | Table Name	| aws-iot-java |
 | Primary partition key	| caldate (String) |
 | Primary sort key	| calminute (Number) |

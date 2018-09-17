@@ -2,6 +2,7 @@
 
 [Official Documentation](https://aws.amazon.com/api-gateway/)
 
+<img src="../images/gateway.png">
 
 ## Method Request
 
