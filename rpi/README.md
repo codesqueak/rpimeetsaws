@@ -13,16 +13,37 @@ A Raspberry Pi Zero was chosen as the compute element of the project as it had a
 * Small physical size 
 * Built-in WiFi
 
-[Full details here](computer.md)
+The model chosen was the Raspberry Pi Zero W (No soldered header, WiFi onboard). Only the required pins for the I2C interface and the onbaord reset where added.
+
+As a precaution, a copper heatsink was also added to the processor.  While unlikely to overheat, the environmental temperature may get high due to possible solar heating effects.
 
 
 ## Sensor Package
 
 The sensor package chosen was the BME280 from [Bosch](https://www.bosch-sensortec.com/bst/products/all_products/bme280). 
 This device is capable of supplying accurate temperature, pressure and humidity data over the I2C bus. The device is very low cost and is
-readily available from various sources, including eBay.
+readily available from various sources, including eBay.  The only difference I have found with various implementations is the I2C bus address. This 
+can be easily found by use of the `i2cdetect -y 1' which should give a display such as:
 
-[Full details here](sensor.md)
+```
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- 76 --  
+```
+The required connections for the sensor module to I2C are:
+
+| Module PCB | Usage | GPIO Header |
+|:-----|:-----|:-----|
+|VCC | 3.3V | P1-01 |
+|GND | Ground | P1-06 |
+|SCL | I2C SCL | P1-05 |
+|SDA | I2C SDA | P1-03 |
 
 ## Power Supply
 
