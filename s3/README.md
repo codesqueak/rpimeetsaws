@@ -4,6 +4,6 @@
 
 <img src="../images/s3.png">
 
-# TBD
+# Example Data Output
 
-
+<img src="../images/graph.png">

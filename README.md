@@ -41,7 +41,9 @@ Processing of incoming data from IoT device(s) [Here](lambda/README.md)
 
 MQTT based interface for handling IoT devices [Here](iot/README.md)
 
+# Example Data Output
 
+<img src="images/graph.png">
 
 
 
