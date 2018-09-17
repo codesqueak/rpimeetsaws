@@ -32,7 +32,7 @@ The integration requests ate configured to access DynamoDB directly.  To do this
 
 ### Mapping Templates
 
-A template needs to be defined.  This is the query used to map data from DynamoDB to the response body.  For example, to read humidy data, add a mapping for the `appliucation/json` 
+A template needs to be defined.  This is the query used to map data from DynamoDB to the response body.  For example, to read humidy data, add a mapping for the `application/json` 
 content type.
 
 ```json
@@ -56,5 +56,5 @@ The method response is left as default as no special configuration is required
 
 ## Authorizers
 
-An authorizer is required for API Gateway calls.  This should be configured to point to the User Pool you have defined in Cognito. Only users authoruize there 
+An authorizer is required for API Gateway calls.  This should be configured to point to the User Pool you have defined in Cognito. Only users authorized there 
 will be able to access the API.

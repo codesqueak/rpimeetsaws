@@ -41,7 +41,7 @@ Notes:
 
 [Lithium Ion Battery Pack - 3.7V 6600mAh](https://www.adafruit.com/product/353)
 
-This battery is bigger than required, but was selected before I had power consumption figures.  Something around 2000mAh should be 
+This battery is bigger than required, but was selected before I had power consumption figures.  Something around 3000mAh should be 
 capable of covering several days of low solar availability.
 
 ## Power Consumption

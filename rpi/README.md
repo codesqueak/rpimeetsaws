@@ -60,7 +60,7 @@ either a solar panel or a LiPo battery when sunlight is not available. The chose
 
 ## Software
 
-The software was required to perform three operations
+The software was required to perform three tasks
 
 * Read sensor data
 * Send data to AWS when WiFi is available
