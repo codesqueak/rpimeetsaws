@@ -191,4 +191,4 @@ The display of the graph data is handled by the [Chart.js](https://www.chartjs.o
 
 The result:
 
-<img src="images/graph.png">
+<img src="../images/graph.png">

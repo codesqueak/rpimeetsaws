@@ -51,6 +51,3 @@ Once the site is verified as being 'live', it is possible to access it via a cus
 - [ ] Create two record sets, one for `mystaticwebsite.net` and one for `mystaticwebsite.net`. Refer to the AWS documentation for [details](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html).
 - [ ] Check you now have access to the website via the domain
   
-## Example Data Output
-
-<img src="../images/graph.png">
