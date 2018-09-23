@@ -15,9 +15,13 @@ How the parts relate to each other
 
 ## IoT Device 
 
-Electronics Package and Supporting Software [Here](rpi/README.md)
+Electronics Package and supporting software [Here](rpi/README.md)
 
-## S3
+## Web Site 
+
+Front end software [Here](frontend/README.md)
+
+## S3 / Route 53
 
 Web site file storage and domain publishing [Here](s3/README.md)
 

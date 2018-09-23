@@ -6,7 +6,7 @@
 
 ## Add A Device
 
-To add a device (In this case a Raspberry Pi), follow the *Connect to AWS IoT* wizrd, selecting the *Configuring a device* path.
+To add a device (In this case a Raspberry Pi), follow the *Connect to AWS IoT* wizard, selecting the *Configuring a device* path.
 
 ## Add A Rule
 
