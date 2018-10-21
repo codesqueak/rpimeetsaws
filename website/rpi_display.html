@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <title>AWS / RPi Test System</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/png" href="images/mouse_icon.png">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 <section class="graph-wrap">
     <h1>Daily Temp / Pressure / Humidity</h1>
     <div class="middle">
-        <div class="chart-container">
+        <div id="container" class="chart-container">
             <canvas id="myChart" class="chartsize"></canvas>
         </div>
     </div>
@@ -36,13 +37,18 @@
             <div>
                 <form id="request" method='post'>
                     <div class="middle">
-                        <button type="button" class="arrow" onclick="updateDate(-1);"><img src="images/left.png"/></button>
+                        <button type="button" class="arrow" onclick="updateDate(-1);"><img src="images/left.png"/>
+                        </button>
                         <input type="text" id="dateInput" class="datefield centertext" placeholder="DD-MM-YYYY"
                                required>
-                        <button type="button" class="arrow" onclick="updateDate(1);"><img src="images/right.png"/></button>
+                        <button type="button" class="arrow" onclick="updateDate(1);"><img src="images/right.png"/>
+                        </button>
                     </div>
                     <div class="middle">
                         <input type="submit" value="Draw!" class="dcentertext">
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="submit" value="Home" class="dcentertext"
+                               onclick="window.location.href='rpi_index.html';">
                     </div>
                 </form>
             </div>
@@ -80,6 +86,15 @@
         $('#dateInput').val(formatDate(new Date()));
     });
 
+    var canvas = document.getElementById("myChart");
+    var canvasContainer = document.getElementById("container");
+    canvas.height = canvasContainer.offsetHeight;
+    canvas.width = canvasContainer.offsetWidth;
+    var ctx = canvas.getContext("2d");
+    ctx.font = "36px Arial";
+    ctx.fillStyle = 'red';
+    var startX = (canvas.width - 500)/2;
+    ctx.fillText("Select a date and press Draw!", startX, 100);
 
 </script>
 

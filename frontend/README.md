@@ -151,10 +151,10 @@ If required, the JWT can also be be recovered immediately from the `authenticate
 cognitoUser.authenticateUser(authenticationDetails, {
     onSuccess: function (result) {
         var accessToken = result.getAccessToken().getJwtToken();
-        },
+        }
 ```
 
-The obtained JWT can be then used to identift the user to other AWS services, suhc as the API Gateway.
+The obtained JWT can be then used to identify the user to other AWS services, such as the API Gateway.
 
 ## API Access
 
@@ -181,7 +181,7 @@ Sample code (Call to http:<endpoint>/all/dd-mm-yyyy).
 ```
 The `authtoken` is the JWT derived from the login process. For this to work, the User Pool defined in Cognito must be made know to the API endpoint the Gateway.
  
-See API Gateway -> APIs -> <your api> -> Authorizers 
+API Gateway -> APIs -> `your api` -> Authorizers 
 
 On successful completion, a call is made to `drawGraph`, which is responsible for handling the returned JSON data.  
 
