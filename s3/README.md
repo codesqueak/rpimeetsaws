@@ -48,6 +48,6 @@ Once the site is verified as being 'live', it is possible to access it via a cus
 - [ ] Go to the Route 53 [page](https://console.aws.amazon.com/route53/home)
 - [ ] Follow the wizard to register a domain. This name *MUST* match the bucket name
 - [ ] Select the `Hosted Zone` tab and select the domain name you just registered
-- [ ] Create two record sets, one for `mystaticwebsite.net` and one for `mystaticwebsite.net`. Refer to the AWS documentation for [details](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html).
+- [ ] Create two record sets, one for `mystaticwebsite.net` and one for `www.mystaticwebsite.net`. Refer to the AWS documentation for [details](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html).
 - [ ] Check you now have access to the website via the domain
   

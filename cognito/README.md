@@ -4,8 +4,12 @@
 
 <img src="../images/cognito.png">
 
+## Features in Brief
+
 The simplest way to add user sign-up, sign-in, and access control to your web applications, REST interfaces and mobile apps in the AWS world is 
 by using Amazon Cognito.
+
+## Usage
 
 This application uses Cognito to:
 
