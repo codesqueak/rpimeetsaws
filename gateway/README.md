@@ -28,7 +28,7 @@ The integration requests ate configured to access DynamoDB directly.  To do this
 - [ ] AWS S=service - DynamoDB
 - [ ] HTTP Method - POST
 - [ ] Action - Query
-- [ ] Execution role - You will need to define a role in IAM with the following policies AmazonAPIGatewayPushToCloudWatchLogs & AmazonDynamoDBReadOnlyAccess
+- [ ] Execution role - You will need to define a role in IAM with the following policies `AmazonAPIGatewayPushToCloudWatchLogs` & `AmazonDynamoDBReadOnlyAccess`
 
 ### Mapping Templates
 

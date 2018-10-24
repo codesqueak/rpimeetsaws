@@ -19,7 +19,7 @@ This application uses Cognito to:
 
 For this application, Cognito was configured with one *User Pool*, with account creation requests being handled manually via the AWS console.
 
-**Note:** Access of IoT applications to MQTT is handled via x509n certification, rather than via Cognito.
+**Note:** Access of IoT applications to MQTT is handled via x509 certificates, rather than via Cognito.
 
 
 

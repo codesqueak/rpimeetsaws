@@ -49,8 +49,8 @@ exports.handler = (event, context, callback) => {
 
 ## Function
 
-The script is called with the data presented to MQTT.  The `event` holds the data send, `context` is so the 
-function can interact with AWS Lambda to get useful runtime information such as time remaining, 
+The script is called with the data presented to MQTT.  The `event` holds the data sent, `context` is present so the 
+function can interact with AWS Lambda environment to get useful runtime information such as time remaining, 
 and `callback` can be used to explicitly return information back to the caller.
 
 Writing to DynamoDB is achieved through a call to `put` using the `DocumentClient`.  Success / failure handling is achieved by a 
