@@ -14,6 +14,7 @@ CloudFront is a massively scaled and globally distributed content delivery netwo
 * Access control - including user authentication and location restrictions
 * Control on S3 access 
 * Control on API access
+* Lambdas
 
 ## Usage
 
