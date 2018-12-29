@@ -17,13 +17,30 @@ The model chosen was the Raspberry Pi Zero W (No soldered header, WiFi onboard).
 
 As a precaution, a copper heatsink was also added to the processor.  While unlikely to overheat, the environmental temperature may get high due to possible solar heating effects.
 
+## Security
+
+...or how not to get owned by a the script kiddies 
+
+A run down of how to secure an RPi device can be found here. [Documentation](https://www.raspberrypi.org/documentation/configuration/security.md)
+
+In summary:
+- [ ] Update the software
+- [ ] Use SSH
+- [ ] Create a new user and delete the pi user 
+- [ ] Install and configure a firewall
+
+### UFW Firewalll Rule
+
+A simple rule to limit ssh connections from one network area.
+
+```sudo ufw limit from 192.168.0.0/24 to any port 22 proto tcp```
 
 ## Sensor Package
 
 The sensor package chosen was the BME280 from [Bosch](https://www.bosch-sensortec.com/bst/products/all_products/bme280). 
 This device is capable of supplying accurate temperature, pressure and humidity data over the I2C bus. The device is very low cost and is
 readily available from various sources, including eBay.  The only difference I have found with various implementations is the I2C bus address. This 
-can be easily found by use of the `i2cdetect -y 1' which should give a display such as:
+can be easily found by use of the `sudo i2cdetect -y 1` which should give a display such as:
 
 ```
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
@@ -36,6 +53,9 @@ can be easily found by use of the `i2cdetect -y 1' which should give a display s
 60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 70: -- -- -- -- -- -- 76 --  
 ```
+
+Note: If the command is not present, install using `sudo apt-get install i2c-tools`
+
 The required connections for the sensor module to I2C are:
 
 | Module PCB | Usage | GPIO Header |
@@ -45,7 +65,7 @@ The required connections for the sensor module to I2C are:
 |SCL | I2C SCL | P1-05 |
 |SDA | I2C SDA | P1-03 |
 
-## Power Supply
+## Power Supply and Power Management
 
 The aim of the power supply is to generate a stable 5V supply with sufficient power to enable operation of the Raspberry Pi. Power is derived from
 either a solar panel or a LiPo battery when sunlight is not available. The chosen system comprises the following off the shelf components from 

@@ -1,4 +1,4 @@
-# Power 
+# Power Supply and Power Management
 
 Powering the project is approached using two criteria, maximize generation & storage, minimize consumption.  Sufficient power needs to be generated in worst case scenarios (Winter) and power usage needs
 to be minimized to help meet the power budget.
@@ -24,32 +24,32 @@ which makes it ideal for outside usage.
 This charger is a simple solution to building a battery / solar power source.  See Adafruit for full details.
 
 The device has one unfortunate characteristic which is that when on solar, the output voltage can rise to that of the panel.  This then requires
-some form of regulation if a stable 5V supply is required.  The output volatage range is between battery voltage (3.7V) and the panel ouptut (6V).
+some form of regulation if a stable 5V supply is required.  The output voltage range is between battery voltage (3.7V) and the panel output (6V).
 
 ### DC/DC Converter
 
 [PowerBoost 1000 Basic - 5V USB Boost ](https://www.adafruit.com/product/2030)
 
-The output of the charger needs to be used to produce a steady 5V output for the Raspberry Pi. This device is a simple solution to that problem.
+The output of the charger used, needs to produce a steady 5V output for the Raspberry Pi. This device is a simple solution to that problem.
 
 Notes:
 
 * The output is actually 5.2V, which is excellent for compensating for small transmission losses etc
-* You can use the cheaper 500mA version [PowerBoost 500 Basic - 5V USB Boost ](https://www.adafruit.com/product/1903)
+* You can use the cheaper (and more efficient) 500mA version [PowerBoost 500 Basic - 5V USB Boost ](https://www.adafruit.com/product/1903)
 
 ### Lithium Ion Battery Pack
 
 [Lithium Ion Battery Pack - 3.7V 6600mAh](https://www.adafruit.com/product/353)
 
 This battery is bigger than required, but was selected before I had power consumption figures.  Something around 3000mAh should be 
-capable of covering several days of low solar availability.
+capable of covering several days of low solar availability, depending on which part of the planet you reside.
 
 ## Power Consumption
 
 To minimize power consumption, a number of steps where taken.
 
 * The electronics where selected to consume as little as possible.  
-    * The Raspberry Pi itself consumes around 125mA (0.625W)when idle
+    * The Raspberry Pi itself consumes around 125mA (0.625W) when busy, 80mA (0.4w) when idle.
     * The DC/DC converted is around 90% efficient
 * Minimum software load - Use something minimal, such as [Raspbian Stretch Lite](https://www.raspberrypi.org/downloads/raspbian/)
 * Disable HDMI 
